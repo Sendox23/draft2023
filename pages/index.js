@@ -1,9 +1,17 @@
-function HomePage() {
+import Head from 'next/head';
+
+export default function Home() {
   return (
     <div>
-      <h1>Welcome to my Next.js app!</h1>
-    </div>
-  )
-}
+      <Head>
+        <title>My Next.js App</title>
+        <meta name="description" content="A simple Next.js application" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
 
-export default HomePage
+      <main>
+        <h1>Welcome to my Next.js App</h1>
+      </main>
+    </div>
+  );
+}
